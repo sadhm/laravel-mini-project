@@ -22,7 +22,7 @@
 
         </div>
     </section>
-
+    <button type="button" onclick="changetext(this)" id="txtchange">ذخیره</button>
     <main id="main">
     @include('front.message')
         <!--==========================

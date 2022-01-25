@@ -54,7 +54,30 @@
 
 <!-- Template Main Javascript File -->
 <script src="{{url('/front/js/main.js')}}"></script>
+<script>
+    function changetext(obj){
+        $("button").click(function () {
+            var b = $(this);
+            $.ajax({
+                url: "",
+                button: b,
+                success: function (result) {
+                    b.text("New Text");
+                }
+            });
+        });
 
+       /* $.ajax({
+            type: "POST",
+            url: "",
+            data:{},
+            success:function( data )
+            {
+                $(obj).text("New Text");
+           }
+        });*/
+    }
+</script>
 </body>
 
 </html>
